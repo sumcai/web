@@ -37,6 +37,6 @@
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "3.0.0",
-    "workbox-build": "6.5.2"
+    "workbox-build": "6.5.3"
   }
 }
