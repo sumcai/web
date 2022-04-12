@@ -3,31 +3,31 @@
 # --------------------------------------
 
 menu:
-  首页: / || fa-solid fa-house-chimney
+  首页: / || fa fa-home
+  导航 || fa fa-paper-plane:
+    归档: /archives/ || fa fa-archive
+    分类: /categories/ || fa fa-folder-open
+    标签: /tags/ || fa fa-tags
+  菜单 || fa fa-list:
+    关于: /about/ || fa fa-heart
+    订阅: /sub/  || fa fa-feed
+    友链: /link/ || fa fa-link
+  #首页: / || fa-solid fa-house-chimney
   # 订阅: /sub/ || fa-solid fa-rss
   # 友链: /blogroll/ || fa-solid fa-user-friends
-  文章 || fa-solid fa-book-reader:
-    归档: /archives || fa-solid fa-box-archive
-    标签: /tags || fa-solid fa-tags
-    分类: /categories || fa-solid fa-folder-open
-  社交 || fa-solid fa-cubes:
-    友链: /blogroll || fa-solid fa-blog
-    音乐: /music || fa-solid fa-music
-    短文: /essay || fa-solid fa-comment-alt
+  #文章 || fa-solid fa-book-reader:
+  #  归档: /archives || fa-solid fa-box-archive
+  #  标签: /tags || fa-solid fa-tags
+  #  分类: /categories || fa-solid fa-folder-open
+  #社交 || fa-solid fa-cubes:
+  #  友链: /blogroll || fa-solid fa-blog
+  #  音乐: /music || fa-solid fa-music
+  #  短文: /essay || fa-solid fa-comment-alt
     # 统计: /charts || fa-solid fa-chart-bar
-  关于 || fa-solid fa-desktop:
-    订阅: /sub || fa-solid fa-rss
-    本站: /about || fa-solid fa-list-check
-    隐私: /privacy-policy || fa-solid fa-user-secret
-
-  #首页: / || fa fa-home
-  #导航 || fa fa-list:
-  #  - 归档: /archives/ || fa fa-archive
-  #  - 分类: /categories/ || fa fa-folder-open
-  #  - 标签: /tags/ || fa fa-tags
-  #菜单 || fa fa-list-ul:
-  #  - 关于: /about/ || fa fa-heart
-  #  - 友链: /link/ || fa fa-link
+  #关于 || fa-solid fa-desktop:
+  #  订阅: /sub || fa-solid fa-rss
+  #  本站: /about || fa-solid fa-list-check
+  #  隐私: /privacy-policy || fa-solid fa-user-secret
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -910,7 +910,7 @@ CDN:
   ClickShowText:
 
   # fontawesome
-  fontawesomeV6:
+  fontawesomeV6: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
 
   # Conversion between Traditional and Simplified Chinese
   translate:

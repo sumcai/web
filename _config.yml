@@ -18,9 +18,9 @@ pretty_urls:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
+tag_dir: _site/tags
+archive_dir: _site/archives
+category_dir: _site/categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -103,6 +103,26 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+
+feed:
+  enable: true
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss.xml
+  limit: 5
+  hub:
+  content: true
+  content_limit: false
+  content_limit_delim: ' '
+  order_by: -updated
+  icon: http://up.iogl.cn/fav.png
+  autodiscovery: true
+  template:
+    - ./source/_site/data/atom.xml
+    - ./source/_site/data/rss.xml
 
 sitemap:
   path: sitemap.xml

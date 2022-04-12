@@ -3,24 +3,24 @@
   h1.post-title= page.title || _p('no_title')
     if theme.post_edit.enable
       a.post-edit-link(href=theme.post_edit.url + page.source title=_p('post.edit') target="_blank")
-        i.fas.fa-pencil-alt
+        i.fa.fa-pencil
         
   #post-meta
     .meta-firstline
       if (theme.post_meta.post.date_type)
         span.post-meta-date
           if (theme.post_meta.post.date_type === 'both')
-            i.far.fa-calendar-alt.fa-fw.post-meta-icon
+            i.fa.fa-calendar.fa-fw.post-meta-icon
             span.post-meta-label= _p('post.created')
             time.post-meta-date-created(datetime=date_xml(page.date) title=_p('post.created') + ' ' + full_date(page.date))=date(page.date, config.date_format)
             span.post-meta-separator |
-            i.fas.fa-history.fa-fw.post-meta-icon
+            i.fa.fa-history.fa-fw.post-meta-icon
             span.post-meta-label= _p('post.updated')
             time.post-meta-date-updated(datetime=date_xml(page.updated) title=_p('post.updated') + ' ' + full_date(page.updated))=date(page.updated, config.date_format)
           else
             - let data_type_update = theme.post_meta.post.date_type === 'updated'
             - let date_type = data_type_update ? 'updated' : 'date'
-            - let date_icon = data_type_update ? 'fas fa-history' :'far fa-calendar-alt'
+            - let date_icon = data_type_update ? 'fa fa-history' :'fa fa-calendar'
             - let date_title = data_type_update ? _p('post.updated') : _p('post.created')
             i.fa-fw.post-meta-icon(class=date_icon)
             span.post-meta-label= date_title
@@ -31,10 +31,10 @@
             span.post-meta-separator |
 
           each item, index in page.categories.data
-            i.fas.fa-inbox.fa-fw.post-meta-icon
+            i.fa.fa-inbox.fa-fw.post-meta-icon
             a(href=url_for(item.path)).post-meta-categories #[=item.name]
             if (index < page.categories.data.length - 1)
-              i.fas.fa-angle-right.post-meta-separator
+              i.fa.fa-angle-right.post-meta-separator
 
     .meta-secondline
       - let postWordcount = theme.wordcount.enable && (theme.wordcount.post_wordcount || theme.wordcount.min2read)
@@ -42,13 +42,13 @@
         span.post-meta-separator |
         span.post-meta-wordcount
           if theme.wordcount.post_wordcount
-            i.far.fa-file-word.fa-fw.post-meta-icon
+            i.fa.fa-file-word-o.fa-fw.post-meta-icon
             span.post-meta-label= _p('post.wordcount') + ':'
             span.word-count= wordcount(page.content)
             if theme.wordcount.min2read
               span.post-meta-separator |
           if theme.wordcount.min2read
-            i.far.fa-clock.fa-fw.post-meta-icon
+            i.fa.fa-clock-o.fa-fw.post-meta-icon
             span.post-meta-label= _p('post.min2read') + ':'
             span= min2read(page.content, {cn: 350, en: 160}) + _p('post.min2read_unit')
     
@@ -56,7 +56,7 @@
       mixin pvBlock(parent_id,parent_class,parent_title)
         span.post-meta-separator |
         span(class=parent_class id=parent_id data-flag-title=page.title)
-          i.far.fa-eye.fa-fw.post-meta-icon
+          i.fa.fa-eye.fa-fw.post-meta-icon
           span.post-meta-label=_p('post.page_pv') + ':'
           if block
             block
@@ -78,7 +78,7 @@
         mixin countBlock
           span.post-meta-separator |
           span.post-meta-commentcount
-            i.far.fa-comments.fa-fw.post-meta-icon
+            i.fa.fa-comments.fa-fw.post-meta-icon
             span.post-meta-label= _p('post.comments') + ':'
             if block
               block
