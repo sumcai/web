@@ -157,4 +157,6 @@ tag_generator:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@138.2.49.65:/home/git/IOGL/blog.git
+  branch: master

@@ -24,6 +24,7 @@
     "hexo": "6.1.0",
     "hexo-butterfly-tag-plugins-plus": "1.0.15",
     "hexo-butterfly-wowjs": "1.0.5",
+    "hexo-deployer-git": "^3.0.0",
     "hexo-filter-nofollow": "2.0.2",
     "hexo-generator-archive": "1.0.0",
     "hexo-generator-baidu-sitemap": "0.1.9",
@@ -36,7 +37,6 @@
     "hexo-renderer-markdown-it": "6.0.1",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^2.0.1",
-    "hexo-server": "3.0.0",
-    "workbox-build": "6.5.2"
+    "hexo-server": "3.0.0"
   }
 }
