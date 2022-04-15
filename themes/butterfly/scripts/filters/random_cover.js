@@ -21,6 +21,14 @@ hexo.extend.filter.register('before_post_render', function (data) {
   }
 
   data.cover = data.cover || randomCover()
+
+  if (data.cover === undefined) {
+    var firstImg = data.content.match(/!\[(.*?)\]\((.*?)\)/);
+    if (firstImg != null) {
+      var imgPath = firstImg.toString().match(/\(([^)]*)\)/);
+      data.cover = imgPath[1];
+    }
+  }
   return data
 })
 
@@ -38,8 +46,10 @@ function randomCover () {
       cover = theme.cover.default_cover[num]
       return cover
     }
-  } else {
+  } else if (theme.cover.default_cover != false){
     cover = theme.default_top_img || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
     return cover
+  } else {
+    return undefined;
   }
 }

@@ -138,8 +138,8 @@ cover:
   # the position of cover in home page (封面顯示的位置)
   # left/right/both
   position: left
-  # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover: https://objectstorage.ap-osaka-1.oraclecloud.com/n/ax0kqy8quzyr/b/bucket-blog/o/banner.jpg
+  # 當沒有設置cover時，默認的封面顯示, false表示用首图作为封面
+  default_cover: false
 
 
 
