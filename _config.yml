@@ -118,7 +118,7 @@ feed:
   content_limit: false
   content_limit_delim: ' '
   order_by: -updated
-  icon: http://up.iogl.cn/fav.png
+  icon: https://objectstorage.ap-osaka-1.oraclecloud.com/n/ax0kqy8quzyr/b/bucket-blog/o/fav.png
   autodiscovery: true
   template:
     - ./source/_site/data/atom.xml
