@@ -1,14 +1,14 @@
 ---
-title: CC的小伙伴们
-description: CC的部落格 友情链接页面
+title: 友情链接
+description: IOGL友情链接页面
 type: link
 aside: false
 top_img: false
 comments: false
-translate_title: blogroll
-subtitle: Blogroll
-date: 2020-06-04 22:17:49
-updated: 2021-07-18 19:38:19
+translate_title: friends
+subtitle: friends
+date: 2022-04-17 20:56:20
+permalink: /friends/
 ---
 <!-- <script src="https://cdn.jsdelivr.net/gh/ccknbc-actions/blogroll@main/blogroll.js" data-pjax></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/butterfly-friend/dist/friend.min.js"></script> -->

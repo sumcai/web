@@ -5,13 +5,13 @@
 menu:
   首页: / || fa fa-home
   导航 || fa fa-paper-plane:
-    归档: /archives/ || fa fa-archive
+    归档: /site/archives/ || fa fa-archive
     分类: /categories/ || fa fa-folder-open
     标签: /tags/ || fa fa-tags
   菜单 || fa fa-list:
     关于: /about/ || fa fa-heart
     订阅: /sub/  || fa fa-feed
-    友链: /link/ || fa fa-link
+    友链: /friends/ || fa fa-link
   #首页: / || fa-solid fa-house-chimney
   # 订阅: /sub/ || fa-solid fa-rss
   # 友链: /blogroll/ || fa-solid fa-user-friends
@@ -477,7 +477,7 @@ site_verification:
 
 theme_color:
    enable: true
-   main: "#0078cc"          #主色调
+   main: "#3798ff"          #主色调
    paginator: "#0078ff"     #分页按钮颜色
    button_hover: "#0078cc"  #按钮悬浮颜色
    text_selection: "#328ffe"  #文本选择颜色
@@ -507,10 +507,10 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: "#f5f5f5"
 
 # Footer Background
-footer_bg: false
+footer_bg: "#2d2236"
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -582,10 +582,10 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  title-prefix-icon: '\f06d'
+  title-prefix-icon-color: '#DC143C'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)

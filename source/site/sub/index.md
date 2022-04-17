@@ -1,12 +1,12 @@
 ---
-title: 订阅部落格文章更新
-description: CC的部落格 订阅文章更新页面
+title: IOGL文章更新
+description: IOGL订阅文章更新页面
 aside: false
 top_img: false
 translate_title: subscribe-to-blog-article-updates
 subtitle: Sub
-date: 2020-10-14 22:17:35
-updated: 2021-11-08 19:23:19
+date: 2022-04-17 20:56:20
+permalink: /sub/
 ---
 {% note success %} **以下方式均支持随时取消订阅，偏好可随时更改** {% endnote %}
 

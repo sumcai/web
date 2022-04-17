@@ -1,5 +1,5 @@
 title: IOGL
-subtitle: I🤍Good Luck
+subtitle:
 description: 深入探讨网联网动态，架构设计，工具使用，源码分析等相关技术
 keywords: IOGL,sumcai,blog
 author: sumcai
@@ -18,9 +18,9 @@ pretty_urls:
 # Directory
 source_dir: source
 public_dir: public
-tag_dir: _site/tags
-archive_dir: _site/archives
-category_dir: _site/categories
+tag_dir: site/tags
+archive_dir: site/archives
+category_dir: site/categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -121,8 +121,8 @@ feed:
   icon: https://objectstorage.ap-osaka-1.oraclecloud.com/n/ax0kqy8quzyr/b/bucket-blog/o/fav.png
   autodiscovery: true
   template:
-    - ./source/_site/data/atom.xml
-    - ./source/_site/data/rss.xml
+    - ./source/site/data/atom.xml
+    - ./source/site/data/rss.xml
 
 sitemap:
   path: sitemap.xml
